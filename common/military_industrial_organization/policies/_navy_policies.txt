@@ -196,7 +196,6 @@ mio_policy_carrier_strike_integration = {
 		OR = {
 			has_mio_equipment_type = capital_ship
 			has_mio_equipment_type = screen_ship
-			has_mio_equipment_type = submarine
 			has_mio_equipment_type = carrier
 		}
 	}
@@ -210,37 +209,7 @@ mio_policy_carrier_strike_integration = {
 			surface_detection = 0.08
 			production_cost_factor = 0.20
 		}
-		helicopter_operator = {
-			anti_air_attack = 0.125
-			surface_detection = 0.08
-			production_cost_factor = 0.20
-		}
-		mio_cat_destroyers = {
-			anti_air_attack = 0.125
-			surface_detection = 0.08
-			production_cost_factor = 0.20
-		}
-		mio_cat_frigates = {
-			anti_air_attack = 0.125
-			surface_detection = 0.08
-			production_cost_factor = 0.20
-		}
-		mio_cat_only_small_ships = {
-			anti_air_attack = 0.125
-			surface_detection = 0.08
-			production_cost_factor = 0.20
-		}
-		submarine = {
-			anti_air_attack = 0.125
-			surface_detection = 0.08
-			production_cost_factor = 0.20
-		}
-		battle_cruiser = {
-			anti_air_attack = 0.125
-			surface_detection = 0.08
-			production_cost_factor = 0.20
-		}
-		battleship_hull_0 = {
+		same_as_mio = {
 			anti_air_attack = 0.125
 			surface_detection = 0.08
 			production_cost_factor = 0.20
@@ -262,35 +231,7 @@ mio_policy_coastal_defense_hardening = {
 		FROM = { has_doctrine = green_water }
 	}
 	equipment_bonus = {
-		carrier = {
-			build_cost_ic = -0.10
-			naval_range = -0.20
-		}
-		helicopter_operator = {
-			build_cost_ic = -0.10
-			naval_range = -0.20
-		}
-		mio_cat_destroyers = {
-			build_cost_ic = -0.10
-			naval_range = -0.20
-		}
-		mio_cat_frigates = {
-			build_cost_ic = -0.10
-			naval_range = -0.20
-		}
-		mio_cat_only_small_ships = {
-			build_cost_ic = -0.10
-			naval_range = -0.20
-		}
-		submarine = {
-			build_cost_ic = -0.10
-			naval_range = -0.20
-		}
-		battle_cruiser = {
-			build_cost_ic = -0.10
-			naval_range = -0.20
-		}
-		battleship_hull_0 = {
+		same_as_mio = {
 			build_cost_ic = -0.10
 			naval_range = -0.20
 		}
@@ -311,49 +252,7 @@ mio_policy_dispersed_light_flotilla = {
 		FROM = { has_doctrine = jeune_ecole }
 	}
 	equipment_bonus = {
-		carrier = {
-			build_cost_ic = -0.125
-			naval_speed = 0.08
-			naval_torpedo_enemy_critical_chance_factor = 0.10
-			naval_range = -0.15
-		}
-		helicopter_operator = {
-			build_cost_ic = -0.125
-			naval_speed = 0.08
-			naval_torpedo_enemy_critical_chance_factor = 0.10
-			naval_range = -0.15
-		}
-		mio_cat_destroyers = {
-			build_cost_ic = -0.125
-			naval_speed = 0.08
-			naval_torpedo_enemy_critical_chance_factor = 0.10
-			naval_range = -0.15
-		}
-		mio_cat_frigates = {
-			build_cost_ic = -0.125
-			naval_speed = 0.08
-			naval_torpedo_enemy_critical_chance_factor = 0.10
-			naval_range = -0.15
-		}
-		mio_cat_only_small_ships = {
-			build_cost_ic = -0.125
-			naval_speed = 0.08
-			naval_torpedo_enemy_critical_chance_factor = 0.10
-			naval_range = -0.15
-		}
-		submarine = {
-			build_cost_ic = -0.125
-			naval_speed = 0.08
-			naval_torpedo_enemy_critical_chance_factor = 0.10
-			naval_range = -0.15
-		}
-		battle_cruiser = {
-			build_cost_ic = -0.125
-			naval_speed = 0.08
-			naval_torpedo_enemy_critical_chance_factor = 0.10
-			naval_range = -0.15
-		}
-		battleship_hull_0 = {
+		same_as_mio = {
 			build_cost_ic = -0.125
 			naval_speed = 0.08
 			naval_torpedo_enemy_critical_chance_factor = 0.10

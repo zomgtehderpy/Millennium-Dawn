@@ -1,5 +1,6 @@
 ﻿l_english:
  fighter: "Air Superiority Fighter"
+ interceptor: "Interceptor"
  Strike_fighter: "Strike Fighter"
  L_Strike_fighter: "Light Strike Fighter"
  CV_L_Strike_fighter: "Carrier Strike Fighter"
@@ -8,6 +9,7 @@
  cas: "Close Air Support"
  strat_bomber: "Strategic Bomber"
  transport_plane: "Transport Plane"
+ air_transport: "Transport Plane"
  attack_helicopter: "Attack Helicopter"
  Air_UAV: "Unmanned Combat Aerial Vehicle"
  transport_helicopter: "Transport Helicopter"

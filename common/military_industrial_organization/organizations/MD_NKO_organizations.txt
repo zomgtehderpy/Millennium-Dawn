@@ -1185,7 +1185,7 @@ NKO_1_bureau_materiel_manufacturer = {
 
 
 		equipment_bonus = {
-			strategic_attack = 0.05
+			air_bombing = 0.05
 			air_attack = 0.01
 		}
 

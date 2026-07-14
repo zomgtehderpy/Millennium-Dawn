@@ -1524,7 +1524,7 @@ BRA_Mectron_materiel_manufacturer = {
 		limit_to_equipment_type = { guided_missile_equipment }
 
 		equipment_bonus = {
-			strategic_attack = 0.10
+			air_bombing = 0.10
 			reliability = 0.02
 		}
 
@@ -1764,7 +1764,7 @@ BRA_avibras_tank_manufacturer = {
 		name = BRA_avibras_tank_manufacturer_trait
 
 		equipment_bonus = {
-			strategic_attack = 0.15
+			air_bombing = 0.15
 			soft_attack = 0.15
 		}
 
@@ -2191,7 +2191,7 @@ BRA_avibras_tank_manufacturer = {
 		limit_to_equipment_type = { guided_missile_equipment }
 
 		equipment_bonus = {
-			strategic_attack = 0.06
+			air_bombing = 0.06
 			reliability = 0.04
 		}
 

@@ -2962,7 +2962,7 @@ GRE_ordtech_industries_manufacturer = {
 
 		equipment_bonus = {
 			air_ground_attack = 0.10
-			strategic_attack = 0.06
+			air_bombing = 0.06
 		}
 
 		on_complete = {
@@ -2989,7 +2989,7 @@ GRE_ordtech_industries_manufacturer = {
 		equipment_bonus = {
 			air_ground_attack = 0.07
 			naval_strike_attack = 0.07
-			strategic_attack = 0.05
+			air_bombing = 0.05
 		}
 
 		on_complete = {
@@ -4310,7 +4310,7 @@ GRE_intracom_manufacturer = {
 		limit_to_equipment_type = { mio_cat_eq_only_uav }
 
 		equipment_bonus = {
-			strategic_attack = 0.08
+			air_bombing = 0.08
 			air_range = 0.07
 		}
 
@@ -4369,7 +4369,7 @@ GRE_intracom_manufacturer = {
 		equipment_bonus = {
 			air_ground_attack = 0.07
 			naval_strike_attack = 0.06
-			strategic_attack = 0.05
+			air_bombing = 0.05
 		}
 
 		on_complete = {
@@ -5698,7 +5698,7 @@ GRE_eab_manufacturer = {
 		limit_to_equipment_type = { mio_cat_eq_only_medium_aircraft }
 
 		equipment_bonus = {
-			strategic_attack = 0.06
+			air_bombing = 0.06
 		}
 
 		on_complete = {
@@ -5782,7 +5782,7 @@ GRE_eab_manufacturer = {
 		limit_to_equipment_type = { mio_cat_eq_only_medium_aircraft }
 
 		equipment_bonus = {
-			strategic_attack = 0.08
+			air_bombing = 0.08
 			air_range = 0.06
 		}
 

@@ -141,6 +141,7 @@ mio_cat_all_ships = {
 		corvette
 		stealth_corvette
 		frigate
+		heavy_frigate
 		stealth_frigate
 		destroyer
 		stealth_destroyer

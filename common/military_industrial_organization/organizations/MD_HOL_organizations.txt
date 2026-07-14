@@ -6045,7 +6045,7 @@ HOL_destinus_missile_manufacturer = {
 		icon = GFX_generic_mio_trait_icon_design
 		position = { x = 5 y = 0 }
 		limit_to_equipment_type = { ballistic_missile_equipment }
-		equipment_bonus = { strategic_attack = 0.05 build_cost_ic = -0.05 }
+		equipment_bonus = { air_bombing = 0.05 build_cost_ic = -0.05 }
 		organization_modifier = { military_industrial_organization_industrial_manufacturer_assign_cost = -0.10 }
 		on_complete = { expenditure_for_mio_upgrade = yes }
 		ai_will_do = {
@@ -6105,7 +6105,7 @@ HOL_destinus_missile_manufacturer = {
 		relative_position_id = HOL_destinus_missile_manufacturer_rheinmetall_jv
 		position = { x = 0 y = 2 }
 		limit_to_equipment_type = { ballistic_missile_equipment }
-		equipment_bonus = { strategic_attack = 0.05 }
+		equipment_bonus = { air_bombing = 0.05 }
 		on_complete = { expenditure_for_mio_upgrade = yes }
 		ai_will_do = {
 			base = 10
@@ -6223,7 +6223,7 @@ HOL_destinus_missile_manufacturer = {
 		relative_position_id = HOL_destinus_missile_manufacturer_rheinmetall_jv
 		position = { x = 0 y = 5 }
 		limit_to_equipment_type = { ballistic_missile_equipment }
-		equipment_bonus = { strategic_attack = 0.05 }
+		equipment_bonus = { air_bombing = 0.05 }
 		organization_modifier = { military_industrial_organization_research_bonus = 0.05 }
 		on_complete = { expenditure_for_mio_upgrade = yes }
 		ai_will_do = {

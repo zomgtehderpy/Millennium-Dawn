@@ -3203,7 +3203,7 @@ AST_raytheon_australia_material = {
 
 		equipment_bonus = {
 			air_ground_attack = 0.08
-			strategic_attack = 0.03
+			air_bombing = 0.03
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -7831,7 +7831,7 @@ AST_amc_air_manufacturer = {
 
 		equipment_bonus = {
 			air_attack = 0.03
-			strategic_attack = 0.06
+			air_bombing = 0.06
 			build_cost_ic = -0.01
 		}
 

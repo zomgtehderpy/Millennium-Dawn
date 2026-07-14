@@ -16318,7 +16318,7 @@ GENERIC_krepost_state_defense_bureau = {
 
 		limit_to_equipment_type = { AA_Equipment }
 
-		equipment_bonus = { air_attack = 0.05 }
+		equipment_bonus = { air_attack = 0.10 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -16346,8 +16346,8 @@ GENERIC_krepost_state_defense_bureau = {
 		limit_to_equipment_type = { AA_Equipment }
 
 		equipment_bonus = {
-			air_attack = 0.06
-			max_organisation = 0.20
+			air_attack = 0.05
+			reliability = 0.10
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -16426,7 +16426,7 @@ GENERIC_krepost_state_defense_bureau = {
 
 		limit_to_equipment_type = { AA_Equipment }
 
-		equipment_bonus = { max_organisation = 0.10 }
+		equipment_bonus = { air_attack = 0.10 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -16655,7 +16655,6 @@ GENERIC_krepost_state_defense_bureau = {
 
 		equipment_bonus = {
 			reliability = 0.05
-			max_organisation = 0.125
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -16742,7 +16741,10 @@ GENERIC_krepost_state_defense_bureau = {
 		position = { x = 0 y = 3 }
 		relative_position_id = GENERIC_krepost_state_defense_bureau_malyutka
 
-		limit_to_equipment_type = { H_AT_Equipment }
+		limit_to_equipment_type = {
+			L_AT_Equipment
+			H_AT_Equipment
+		}
 
 		equipment_bonus = { ap_attack = 0.08 }
 
@@ -16806,6 +16808,11 @@ GENERIC_krepost_state_defense_bureau = {
 
 		position = { x = 1 y = 4 }
 		relative_position_id = GENERIC_krepost_state_defense_bureau_malyutka
+
+		limit_to_equipment_type = {
+			L_AT_Equipment
+			H_AT_Equipment
+		}
 
 		equipment_bonus = { breakthrough = 0.05 }
 
@@ -17569,8 +17576,7 @@ GENERIC_mil_kamov_rotorworks = {
 		limit_to_equipment_type = { heavy_tank_chassis }
 
 		equipment_bonus = {
-			max_organisation = 0.06
-			fuel_consumption = 0.08
+			fuel_consumption = -0.08
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -17942,7 +17948,7 @@ GENERIC_mil_kamov_rotorworks = {
 		limit_to_equipment_type = { heavy_tank_amphibious_chassis }
 
 		equipment_bonus = {
-			armor_value = 0.06
+			breakthrough = 0.06
 			defense = 0.04
 		}
 
@@ -17970,7 +17976,7 @@ GENERIC_mil_kamov_rotorworks = {
 		limit_to_equipment_type = { heavy_tank_chassis }
 
 		equipment_bonus = {
-			armor_value = 0.05
+			breakthrough = 0.05
 			defense = 0.05
 		}
 
@@ -18139,7 +18145,7 @@ GENERIC_mil_kamov_rotorworks = {
 
 		limit_to_equipment_type = { heavy_tank_amphibious_chassis }
 
-		equipment_bonus = { max_organisation = 0.05 }
+		equipment_bonus = { reliability = 0.05 }
 
 		on_complete = {
 			expenditure_medium_for_mio_upgrade = yes
@@ -18483,7 +18489,7 @@ GENERIC_mil_kamov_rotorworks = {
 
 		limit_to_equipment_type = { heavy_tank_chassis }
 
-		equipment_bonus = { max_organisation = 0.05 }
+		equipment_bonus = { breakthrough = 0.05 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -18513,7 +18519,7 @@ GENERIC_mil_kamov_rotorworks = {
 
 		limit_to_equipment_type = { heavy_tank_amphibious_chassis }
 
-		equipment_bonus = { armor_value = 0.05 }
+		equipment_bonus = { defense = 0.05 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -21261,7 +21267,7 @@ GENERIC_aurora_aerodynamics_corporation = {
 
 		mutually_exclusive = { GENERIC_aurora_aerodynamics_corporation_sead_wild_weasel }
 
-		equipment_bonus = { strategic_attack = 0.08 }
+		equipment_bonus = { air_bombing = 0.08 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -21597,7 +21603,7 @@ GENERIC_aurora_aerodynamics_corporation = {
 		position = { x = -1 y = 3 }
 		relative_position_id = GENERIC_aurora_aerodynamics_corporation_phantom_works_charter
 
-		equipment_bonus = { strategic_attack = 0.08 }
+		equipment_bonus = { air_bombing = 0.08 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -21725,7 +21731,7 @@ GENERIC_aurora_aerodynamics_corporation = {
 		position = { x = 1 y = 4 }
 		relative_position_id = GENERIC_aurora_aerodynamics_corporation_phantom_works_charter
 
-		equipment_bonus = { strategic_attack = 0.06 }
+		equipment_bonus = { air_bombing = 0.06 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -23304,7 +23310,7 @@ GENERIC_skyforge_autonomous_systems = {
 		limit_to_equipment_type = { mio_cat_eq_only_uav }
 
 		equipment_bonus = {
-			strategic_attack = 0.07
+			air_bombing = 0.07
 			naval_strike_attack = 0.05
 		}
 
@@ -23635,7 +23641,7 @@ GENERIC_skyforge_autonomous_systems = {
 
 		limit_to_equipment_type = { mio_cat_eq_only_uav }
 
-		equipment_bonus = { air_defence = 0.08 }
+		equipment_bonus = { air_agility = 0.08 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -24022,7 +24028,7 @@ GENERIC_skyforge_autonomous_systems = {
 		limit_to_equipment_type = { mio_cat_eq_only_uav }
 
 		equipment_bonus = {
-			max_organisation = 0.05
+			reliability = 0.05
 			air_agility = 0.04
 		}
 
@@ -25587,7 +25593,7 @@ GENERIC_vector_defense_labs = {
 
 		limit_to_equipment_type = { sam_missile_equipment }
 
-		equipment_bonus = { thrust = 0.07 }
+		equipment_bonus = { air_agility = 0.07 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -25612,7 +25618,7 @@ GENERIC_vector_defense_labs = {
 
 		limit_to_equipment_type = { sam_missile_equipment }
 
-		equipment_bonus = { maximum_speed = 0.07 }
+		equipment_bonus = { air_range = 0.07 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -25665,7 +25671,7 @@ GENERIC_vector_defense_labs = {
 
 		limit_to_equipment_type = { sam_missile_equipment }
 
-		equipment_bonus = { maximum_speed = 0.06 }
+		equipment_bonus = { air_range = 0.06 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -25776,7 +25782,7 @@ GENERIC_vector_defense_labs = {
 
 		limit_to_equipment_type = { sam_missile_equipment }
 
-		equipment_bonus = { thrust = 0.06 }
+		equipment_bonus = { air_agility = 0.06 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -27080,7 +27086,7 @@ GENERIC_societe_europeenne_daerostructures = {
 			large_plane_maritime_patrol_airframe
 		}
 
-		equipment_bonus = { strategic_attack = 0.08 }
+		equipment_bonus = { air_bombing = 0.08 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -27438,7 +27444,7 @@ GENERIC_societe_europeenne_daerostructures = {
 			large_plane_maritime_patrol_airframe
 		}
 
-		equipment_bonus = { strategic_attack = 0.08 }
+		equipment_bonus = { air_bombing = 0.08 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -28730,7 +28736,7 @@ GENERIC_brunn_heavy_engineering_werke = {
 
 		limit_to_equipment_type = { util_vehicle_type }
 
-		equipment_bonus = { max_organisation = 0.03 }
+		equipment_bonus = { reliability = 0.03 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -30442,7 +30448,7 @@ GENERIC_north_plains_heavy_industries = {
 
 		mutually_exclusive = { GENERIC_north_plains_heavy_industries_conscript_assembly_halls }
 
-		equipment_bonus = { max_organisation = 0.04 }
+		equipment_bonus = { build_cost_ic = -0.04 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -30871,8 +30877,7 @@ GENERIC_north_plains_heavy_industries = {
 		relative_position_id = GENERIC_north_plains_heavy_industries_foreign_sales_office
 
 		equipment_bonus = {
-			build_cost_ic = -0.06
-			max_organisation = 0.04
+			build_cost_ic = -0.08
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -30898,7 +30903,7 @@ GENERIC_north_plains_heavy_industries = {
 
 		equipment_bonus = {
 			soft_attack = 0.04
-			maximum_speed = 0.04
+			breakthrough = 0.04
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -31095,7 +31100,7 @@ GENERIC_north_plains_heavy_industries = {
 
 		equipment_bonus = {
 			defense = 0.05
-			maximum_speed = 0.04
+			reliability = 0.04
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -31419,7 +31424,12 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 	equipment_type = {
 		mio_cat_eq_only_light_aircraft
 		cv_medium_plane_scout_airframe
-		mio_cat_eq_only_large_aircraft
+		large_plane_awacs_airframe
+		cv_medium_plane_air_transport_airframe
+		large_plane_air_transport_airframe
+		strategic_bomber
+		large_plane_maritime_patrol_airframe
+		large_plane_cas_airframe
 	}
 
 	research_categories = {
@@ -31534,7 +31544,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 
 		all_parents = { GENERIC_southwestern_aerospace_dynamics_bureau_fc1_coproduction }
 
-		position = { x = -2 y = 2 }
+		position = { x = -1 y = 2 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_aircraft }
@@ -31558,11 +31568,11 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		icon = GFX_generic_mio_trait_icon_light_aircraft_speed
 
 		all_parents = {
-			GENERIC_southwestern_aerospace_dynamics_bureau_fc1_coproduction
-			GENERIC_southwestern_aerospace_dynamics_bureau_delta_refinement
+			GENERIC_southwestern_aerospace_dynamics_bureau_composite_skin
+			GENERIC_southwestern_aerospace_dynamics_bureau_thrust_vector
 		}
 
-		position = { x = 0 y = 2 }
+		position = { x = 0 y = 3 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_aircraft }
@@ -31587,7 +31597,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 
 		all_parents = { GENERIC_southwestern_aerospace_dynamics_bureau_delta_refinement }
 
-		position = { x = 2 y = 2 }
+		position = { x = 1 y = 2 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_aircraft }
@@ -31615,7 +31625,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 			GENERIC_southwestern_aerospace_dynamics_bureau_ws_turbofan
 		}
 
-		position = { x = -1 y = 3 }
+		position = { x = -1 y = 4 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		mutually_exclusive = { GENERIC_southwestern_aerospace_dynamics_bureau_imported_aesa }
@@ -31657,7 +31667,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 			GENERIC_southwestern_aerospace_dynamics_bureau_thrust_vector
 		}
 
-		position = { x = 1 y = 3 }
+		position = { x = 1 y = 4 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		mutually_exclusive = { GENERIC_southwestern_aerospace_dynamics_bureau_native_aesa }
@@ -31686,7 +31696,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 
 		all_parents = { GENERIC_southwestern_aerospace_dynamics_bureau_native_aesa }
 
-		position = { x = -2 y = 4 }
+		position = { x = -1 y = 5 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_aircraft }
@@ -31710,12 +31720,11 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		icon = GFX_generic_mio_trait_icon_light_aircraft_range
 
 		any_parent = {
-			GENERIC_southwestern_aerospace_dynamics_bureau_native_aesa
-			GENERIC_southwestern_aerospace_dynamics_bureau_imported_aesa
-			GENERIC_southwestern_aerospace_dynamics_bureau_datalink_relay_grid
+			GENERIC_southwestern_aerospace_dynamics_bureau_helmet_cue
+			GENERIC_southwestern_aerospace_dynamics_bureau_pl15_missile
 		}
 
-		position = { x = 0 y = 4 }
+		position = { x = 0 y = 6 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_aircraft }
@@ -31740,7 +31749,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 
 		all_parents = { GENERIC_southwestern_aerospace_dynamics_bureau_imported_aesa }
 
-		position = { x = 2 y = 4 }
+		position = { x = 1 y = 5 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_aircraft }
@@ -31768,7 +31777,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 			GENERIC_southwestern_aerospace_dynamics_bureau_datalink_pod
 		}
 
-		position = { x = -1 y = 5 }
+		position = { x = -1 y = 7 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_aircraft }
@@ -31799,7 +31808,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 			GENERIC_southwestern_aerospace_dynamics_bureau_pl15_missile
 		}
 
-		position = { x = 1 y = 5 }
+		position = { x = 1 y = 7 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		limit_to_equipment_type = { mio_cat_eq_only_light_aircraft }
@@ -31827,7 +31836,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 			GENERIC_southwestern_aerospace_dynamics_bureau_egypt_assembly
 		}
 
-		position = { x = 0 y = 6 }
+		position = { x = 0 y = 8 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_chengdu_heritage
 
 		organization_modifier = { military_industrial_organization_funds_gain = 0.05 }
@@ -31850,7 +31859,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 
 		position = { x = 5 y = 0 }
 
-		limit_to_equipment_type = { cv_medium_plane_scout_airframe }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		equipment_bonus = { reliability = 0.05 }
 
@@ -31875,7 +31892,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = -1 y = 1 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_panda_eye_lineage
 
-		limit_to_equipment_type = { cv_medium_plane_scout_airframe }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		equipment_bonus = { air_defence = 0.05 }
 
@@ -31900,7 +31925,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = 1 y = 1 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_panda_eye_lineage
 
-		limit_to_equipment_type = { cv_medium_plane_scout_airframe }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		equipment_bonus = { reliability = 0.06 }
 
@@ -31928,7 +31961,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = 0 y = 2 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_panda_eye_lineage
 
-		limit_to_equipment_type = { cv_medium_plane_scout_airframe }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		equipment_bonus = { air_range = 0.05 }
 
@@ -31965,7 +32006,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = -1 y = 3 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_panda_eye_lineage
 
-		limit_to_equipment_type = { cv_medium_plane_scout_airframe }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		equipment_bonus = { air_defence = 0.06 }
 
@@ -32016,7 +32065,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = 0 y = 4 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_panda_eye_lineage
 
-		limit_to_equipment_type = { cv_medium_plane_scout_airframe }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		equipment_bonus = { air_range = 0.06 }
 
@@ -32043,7 +32100,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 
 		mutually_exclusive = { GENERIC_southwestern_aerospace_dynamics_bureau_land_orbit_doctrine }
 
-		limit_to_equipment_type = { cv_medium_plane_scout_airframe }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		equipment_bonus = { maximum_speed = 0.05 }
 
@@ -32096,7 +32161,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = 0 y = 6 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_panda_eye_lineage
 
-		limit_to_equipment_type = { cv_medium_plane_scout_airframe }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		production_bonus = { production_cost_factor = -0.09 }
 
@@ -32144,9 +32217,13 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 
 		position = { x = 8 y = 0 }
 
-		limit_to_equipment_type = { mio_cat_eq_only_large_aircraft }
+		limit_to_equipment_type = {
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
-		equipment_bonus = { strategic_attack = 0.08 }
+		equipment_bonus = { air_bombing = 0.1 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -32169,9 +32246,13 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = -1 y = 1 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_xian_heritage
 
-		limit_to_equipment_type = { mio_cat_eq_only_large_aircraft }
+		limit_to_equipment_type = {
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
-		equipment_bonus = { strategic_attack = 0.09 }
+		equipment_bonus = { naval_strike_attack = 0.1 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -32194,9 +32275,13 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = 1 y = 1 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_xian_heritage
 
-		limit_to_equipment_type = { mio_cat_eq_only_large_aircraft }
+		limit_to_equipment_type = {
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
-		equipment_bonus = { strategic_attack = 0.10 }
+		equipment_bonus = { air_bombing = 0.1 }
 
 		on_complete = {
 			expenditure_medium_for_mio_upgrade = yes
@@ -32232,9 +32317,13 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = 0 y = 2 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_xian_heritage
 
-		limit_to_equipment_type = { mio_cat_eq_only_large_aircraft }
+		limit_to_equipment_type = {
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
-		equipment_bonus = { air_attack = 0.06 }
+		equipment_bonus = { air_attack = 0.1 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -32257,9 +32346,13 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = -1 y = 3 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_xian_heritage
 
-		limit_to_equipment_type = { mio_cat_eq_only_large_aircraft }
+		limit_to_equipment_type = {
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
-		equipment_bonus = { build_cost_ic = -0.07 }
+		equipment_bonus = { naval_strike_attack = 0.1 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -32282,9 +32375,13 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		position = { x = 1 y = 3 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_xian_heritage
 
-		limit_to_equipment_type = { mio_cat_eq_only_large_aircraft }
+		limit_to_equipment_type = {
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
-		equipment_bonus = { build_cost_ic = -0.08 }
+		equipment_bonus = { air_bombing = 0.1 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -32305,7 +32402,6 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		all_parents = {
 			GENERIC_southwestern_aerospace_dynamics_bureau_asm_integration
 			GENERIC_southwestern_aerospace_dynamics_bureau_cruise_missile_bay
-			GENERIC_southwestern_aerospace_dynamics_bureau_ws_turbofan
 		}
 
 		position = { x = 0 y = 4 }
@@ -32336,7 +32432,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 
 		mutually_exclusive = { GENERIC_southwestern_aerospace_dynamics_bureau_saturation_doctrine }
 
-		limit_to_equipment_type = { mio_cat_eq_only_large_aircraft }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		production_bonus = { production_capacity_factor = 0.12 }
 
@@ -32363,7 +32467,15 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 
 		mutually_exclusive = { GENERIC_southwestern_aerospace_dynamics_bureau_stealth_vector }
 
-		limit_to_equipment_type = { mio_cat_eq_only_large_aircraft }
+		limit_to_equipment_type = {
+			cv_medium_plane_scout_airframe
+			large_plane_awacs_airframe
+			cv_medium_plane_air_transport_airframe
+			large_plane_air_transport_airframe
+			strategic_bomber
+			large_plane_maritime_patrol_airframe
+			large_plane_cas_airframe
+		}
 
 		production_bonus = { production_capacity_factor = 0.14 }
 
@@ -32403,7 +32515,7 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 			GENERIC_southwestern_aerospace_dynamics_bureau_saturation_doctrine
 		}
 
-		position = { x = -2 y = 6 }
+		position = { x = -1 y = 6 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_xian_heritage
 
 		organization_modifier = { military_industrial_organization_design_team_assign_cost = -0.18 }
@@ -32427,10 +32539,9 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 		any_parent = {
 			GENERIC_southwestern_aerospace_dynamics_bureau_stealth_vector
 			GENERIC_southwestern_aerospace_dynamics_bureau_saturation_doctrine
-			GENERIC_southwestern_aerospace_dynamics_bureau_battle_management_suite
 		}
 
-		position = { x = 0 y = 6 }
+		position = { x = 1 y = 6 }
 		relative_position_id = GENERIC_southwestern_aerospace_dynamics_bureau_xian_heritage
 
 		organization_modifier = { military_industrial_organization_design_team_assign_cost = -0.15 }
@@ -32552,7 +32663,6 @@ GENERIC_southwestern_aerospace_dynamics_bureau = {
 			}
 		}
 	}
-
 }
 GENERIC_eastern_maritime_shipbuilding_group = {
 	allowed = { is_custom_mio_country = no }
@@ -34037,7 +34147,7 @@ GENERIC_second_academy_missile_bureau = {
 
 		limit_to_equipment_type = { guided_missile_equipment }
 
-		equipment_bonus = { air_attack = 0.08 }
+		equipment_bonus = { air_ground_attack = 0.08 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -34240,7 +34350,7 @@ GENERIC_second_academy_missile_bureau = {
 			nuclear_missile_equipment
 		}
 
-		equipment_bonus = { air_attack = 0.12 }
+		equipment_bonus = { air_bombing = 0.12 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -34308,7 +34418,7 @@ GENERIC_second_academy_missile_bureau = {
 			nuclear_missile_equipment
 		}
 
-		equipment_bonus = { air_defence = 0.10 }
+		equipment_bonus = { air_agility = 0.10 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -34688,7 +34798,7 @@ GENERIC_second_academy_missile_bureau = {
 			mothership_equipment
 		}
 
-		equipment_bonus = { air_defence = 0.10 }
+		equipment_bonus = { air_agility = 0.10 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -34747,7 +34857,7 @@ GENERIC_second_academy_missile_bureau = {
 			mothership_equipment
 		}
 
-		equipment_bonus = { max_organisation = 0.05 }
+		equipment_bonus = { air_agility = 0.05 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -34958,9 +35068,7 @@ GENERIC_halland_civic_engineering_group = {
 	}
 
 	equipment_type = {
-		convoy
-		support_ship
-		repair_ship_hull
+		mio_cat_civilian_ships
 		train_equipment
 		util_vehicle_type
 	}
@@ -35056,7 +35164,7 @@ GENERIC_halland_civic_engineering_group = {
 
 		limit_to_equipment_type = {
 			train_equipment
-			convoy
+			mio_cat_civilian_ships
 		}
 
 		production_bonus = { production_capacity_factor = 0.08 }
@@ -35084,7 +35192,7 @@ GENERIC_halland_civic_engineering_group = {
 
 		mutually_exclusive = { GENERIC_halland_valmor_rail }
 
-		limit_to_equipment_type = { convoy }
+		limit_to_equipment_type = { mio_cat_civilian_ships }
 
 		equipment_bonus = {
 			reliability = 0.08
@@ -35112,7 +35220,10 @@ GENERIC_halland_civic_engineering_group = {
 		position = { x = -1 y = 2 }
 		relative_position_id = GENERIC_halland_logistics_charter
 
-		limit_to_equipment_type = { train_equipment }
+		limit_to_equipment_type = {
+			train_equipment
+			mio_cat_civilian_ships
+		}
 
 		equipment_bonus = { maximum_speed = 0.08 }
 
@@ -35143,7 +35254,7 @@ GENERIC_halland_civic_engineering_group = {
 
 		limit_to_equipment_type = {
 			train_equipment
-			convoy
+			mio_cat_civilian_ships
 		}
 
 		production_bonus = { production_cost_factor = -0.05 }
@@ -35174,7 +35285,7 @@ GENERIC_halland_civic_engineering_group = {
 		position = { x = 1 y = 2 }
 		relative_position_id = GENERIC_halland_logistics_charter
 
-		limit_to_equipment_type = { convoy }
+		limit_to_equipment_type = { mio_cat_civilian_ships }
 
 		equipment_bonus = {
 			build_cost_ic = -0.06
@@ -35253,7 +35364,7 @@ GENERIC_halland_civic_engineering_group = {
 		position = { x = 1 y = 3 }
 		relative_position_id = GENERIC_halland_logistics_charter
 
-		limit_to_equipment_type = { convoy }
+		limit_to_equipment_type = { mio_cat_civilian_ships }
 
 		production_bonus = { production_resource_need_factor = -0.08 }
 
@@ -35310,7 +35421,7 @@ GENERIC_halland_civic_engineering_group = {
 
 		mutually_exclusive = { GENERIC_halland_solbrand_ferry }
 
-		limit_to_equipment_type = { convoy }
+		limit_to_equipment_type = { mio_cat_civilian_ships }
 
 		equipment_bonus = { reliability = 0.05 }
 
@@ -35363,7 +35474,7 @@ GENERIC_halland_civic_engineering_group = {
 
 		limit_to_equipment_type = {
 			train_equipment
-			convoy
+			mio_cat_civilian_ships
 		}
 
 		production_bonus = { production_capacity_factor = 0.05 }
@@ -35437,8 +35548,7 @@ GENERIC_halland_civic_engineering_group = {
 		mutually_exclusive = { GENERIC_halland_krommerdijk_drydock }
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		equipment_bonus = {
@@ -35468,8 +35578,7 @@ GENERIC_halland_civic_engineering_group = {
 		relative_position_id = GENERIC_halland_veerzijp_yard
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		production_bonus = { production_capacity_factor = 0.08 }
@@ -35498,8 +35607,7 @@ GENERIC_halland_civic_engineering_group = {
 		mutually_exclusive = { GENERIC_halland_brinkmet_tender }
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		equipment_bonus = {
@@ -35529,8 +35637,7 @@ GENERIC_halland_civic_engineering_group = {
 		relative_position_id = GENERIC_halland_veerzijp_yard
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		equipment_bonus = { naval_speed = 0.05 }
@@ -35561,8 +35668,7 @@ GENERIC_halland_civic_engineering_group = {
 		relative_position_id = GENERIC_halland_veerzijp_yard
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		production_bonus = { production_cost_factor = -0.06 }
@@ -35589,8 +35695,7 @@ GENERIC_halland_civic_engineering_group = {
 		relative_position_id = GENERIC_halland_veerzijp_yard
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		equipment_bonus = { reliability = 0.06 }
@@ -35617,8 +35722,7 @@ GENERIC_halland_civic_engineering_group = {
 		relative_position_id = GENERIC_halland_veerzijp_yard
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		equipment_bonus = { surface_detection = 0.05 }
@@ -35668,8 +35772,7 @@ GENERIC_halland_civic_engineering_group = {
 		relative_position_id = GENERIC_halland_veerzijp_yard
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		production_bonus = { production_resource_need_factor = -0.08 }
@@ -35701,8 +35804,7 @@ GENERIC_halland_civic_engineering_group = {
 		mutually_exclusive = { GENERIC_halland_fjorbrook_works }
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		equipment_bonus = { max_organisation = 0.05 }
@@ -35731,8 +35833,7 @@ GENERIC_halland_civic_engineering_group = {
 		mutually_exclusive = { GENERIC_halland_bergreet_reform }
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		equipment_bonus = { build_cost_ic = -0.05 }
@@ -35762,8 +35863,7 @@ GENERIC_halland_civic_engineering_group = {
 		relative_position_id = GENERIC_halland_veerzijp_yard
 
 		limit_to_equipment_type = {
-			support_ship
-			repair_ship_hull
+			mio_cat_civilian_ships
 		}
 
 		equipment_bonus = { reliability = 0.05 }
@@ -36044,7 +36144,7 @@ GENERIC_halland_civic_engineering_group = {
 
 		equipment_bonus = {
 			hard_attack = 0.05
-			max_organisation = 0.03
+			reliability = 0.03
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -36364,7 +36464,7 @@ GENERIC_compagnie_aeronatique_darmement = {
 		position = { x = -1 y = 3 }
 
 		equipment_bonus = {
-			strategic_attack = 0.08
+			air_bombing = 0.08
 			air_range = 0.04
 		}
 
@@ -36428,8 +36528,8 @@ GENERIC_compagnie_aeronatique_darmement = {
 		position = { x = 1 y = 3 }
 
 		equipment_bonus = {
-			air_attack = 0.08
-			maximum_speed = 0.05
+			air_bombing = 0.08
+			air_range = 0.05
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -36450,7 +36550,7 @@ GENERIC_compagnie_aeronatique_darmement = {
 
 		position = { x = 4 y = 0 }
 
-		equipment_bonus = { air_defence = 0.06 }
+		equipment_bonus = { reliability = 0.06 }
 
 		on_complete = {
 			expenditure_medium_for_mio_upgrade = yes
@@ -36559,7 +36659,7 @@ GENERIC_compagnie_aeronatique_darmement = {
 		relative_position_id = GENERIC_compagnie_aeronatique_darmement_pod_consortium_root
 		position = { x = -1 y = 2 }
 
-		equipment_bonus = { air_defence = 0.08 }
+		equipment_bonus = { air_agility = 0.08 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -36608,7 +36708,7 @@ GENERIC_compagnie_aeronatique_darmement = {
 		relative_position_id = GENERIC_compagnie_aeronatique_darmement_pod_consortium_root
 		position = { x = 0 y = 2 }
 
-		equipment_bonus = { air_defence = 0.06 }
+		equipment_bonus = { air_agility = 0.06 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -36657,7 +36757,7 @@ GENERIC_compagnie_aeronatique_darmement = {
 
 		position = { x = 8 y = 0 }
 
-		equipment_bonus = { weight = -0.04 }
+		equipment_bonus = { air_agility = 0.04 }
 
 		on_complete = {
 			expenditure_medium_for_mio_upgrade = yes
@@ -36692,7 +36792,7 @@ GENERIC_compagnie_aeronatique_darmement = {
 
 		mutually_exclusive = { GENERIC_compagnie_aeronatique_darmement_metamaterial_panels }
 
-		equipment_bonus = { weight = -0.05 }
+		equipment_bonus = { air_agility = 0.05 }
 
 		production_bonus = { production_resource_need_factor = -0.08 }
 
@@ -36719,7 +36819,7 @@ GENERIC_compagnie_aeronatique_darmement = {
 
 		mutually_exclusive = { GENERIC_compagnie_aeronatique_darmement_ceramic_coating }
 
-		equipment_bonus = { weight = -0.04 }
+		equipment_bonus = { air_agility = 0.04 }
 
 		production_bonus = { production_cost_factor = -0.08 }
 
@@ -36824,7 +36924,7 @@ GENERIC_compagnie_aeronatique_darmement = {
 		relative_position_id = GENERIC_compagnie_aeronatique_darmement_lowobservable_core
 		position = { x = 0 y = 2 }
 
-		equipment_bonus = { max_organisation = 0.05 }
+		equipment_bonus = { naval_strike_targetting = 0.05 }
 
 		organization_modifier = { military_industrial_organization_task_capacity = 1 }
 
@@ -37164,7 +37264,7 @@ GENERIC_helitech_avionique = {
 		relative_position_id = GENERIC_helitech_avionique_rotor_composite_blades
 		position = { x = 0 y = 6 }
 
-		equipment_bonus = { armor_value = 0.10 }
+		equipment_bonus = { defense = 0.10 }
 
 		on_complete = {
 			expenditure_medium_for_mio_upgrade = yes
@@ -37491,7 +37591,7 @@ GENERIC_helitech_avionique = {
 
 		limit_to_equipment_type = { heavy_tank_amphibious_chassis }
 
-		equipment_bonus = { armor_value = 0.10 }
+		equipment_bonus = { defense = 0.10 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -37648,7 +37748,7 @@ GENERIC_helitech_avionique = {
 
 		mutually_exclusive = { GENERIC_helitech_avionique_mwe_chaff_flares }
 
-		equipment_bonus = { armor_value = 0.10 }
+		equipment_bonus = { defense = 0.10 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -37888,8 +37988,7 @@ GENERIC_western_orbital_systems_bureau = {
 		limit_to_equipment_type = { nuclear_ballistic_missile_equipment }
 
 		equipment_bonus = {
-			reliability = 0.03
-			max_organisation = 0.02
+			reliability = 0.04
 		}
 
 		on_complete = {
@@ -37975,7 +38074,7 @@ GENERIC_western_orbital_systems_bureau = {
 
 		limit_to_equipment_type = { nuclear_ballistic_missile_equipment }
 
-		equipment_bonus = { air_defence = 0.06 }
+		equipment_bonus = { reliability = 0.06 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -38106,7 +38205,7 @@ GENERIC_western_orbital_systems_bureau = {
 
 		limit_to_equipment_type = { nuclear_ballistic_missile_equipment }
 
-		equipment_bonus = { air_attack = 0.08 }
+		equipment_bonus = { air_bombing = 0.08 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -38217,7 +38316,7 @@ GENERIC_western_orbital_systems_bureau = {
 
 		limit_to_equipment_type = { nuclear_ballistic_missile_equipment }
 
-		equipment_bonus = { thrust = 0.05 }
+		equipment_bonus = { air_agility = 0.05 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -38375,7 +38474,7 @@ GENERIC_western_orbital_systems_bureau = {
 		limit_to_equipment_type = { nuclear_ballistic_missile_equipment }
 
 		equipment_bonus = {
-			strategic_attack = 0.10
+			air_bombing = 0.10
 			maximum_speed = 0.06
 		}
 
@@ -39709,7 +39808,7 @@ GENERIC_central_heavy_atomics_power = {
 
 		limit_to_equipment_type = { guided_missile_equipment }
 
-		equipment_bonus = { air_attack = 0.06 }
+		equipment_bonus = { air_bombing = 0.06 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -39782,7 +39881,7 @@ GENERIC_central_heavy_atomics_power = {
 
 		limit_to_equipment_type = { nuclear_missile_equipment }
 
-		equipment_bonus = { air_defence = 0.06 }
+		equipment_bonus = { reliability = 0.06 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -39862,7 +39961,7 @@ GENERIC_central_heavy_atomics_power = {
 
 		limit_to_equipment_type = { nuclear_missile_equipment }
 
-		equipment_bonus = { air_attack = 0.08 }
+		equipment_bonus = { air_bombing = 0.08 }
 
 		on_complete = {
 			expenditure_medium_for_mio_upgrade = yes
@@ -39899,7 +39998,7 @@ GENERIC_central_heavy_atomics_power = {
 
 		limit_to_equipment_type = { nuclear_missile_equipment }
 
-		equipment_bonus = { strategic_attack = 0.06 }
+		equipment_bonus = { air_bombing = 0.06 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -39975,7 +40074,7 @@ GENERIC_central_heavy_atomics_power = {
 
 		limit_to_equipment_type = { nuclear_missile_equipment }
 
-		equipment_bonus = { strategic_attack = 0.08 }
+		equipment_bonus = { air_bombing = 0.08 }
 
 		on_complete = {
 			expenditure_medium_for_mio_upgrade = yes

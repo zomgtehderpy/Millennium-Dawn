@@ -7779,7 +7779,7 @@ SOV_united_aircraft_corporation_aircraft_manufacturer = {
 
 		limit_to_equipment_type = { large_plane_airframe }
 
-		equipment_bonus = { strategic_attack = 0.04 }
+		equipment_bonus = { air_bombing = 0.04 }
 
 		organization_modifier = { military_industrial_organization_size_up_requirement = -0.05 }
 
@@ -7989,7 +7989,7 @@ SOV_united_aircraft_corporation_aircraft_manufacturer = {
 
 		limit_to_equipment_type = { large_plane_airframe }
 
-		equipment_bonus = { strategic_attack = 0.05 }
+		equipment_bonus = { air_bombing = 0.05 }
 
 		production_bonus = { production_resource_need_factor = -0.05 }
 
@@ -8069,7 +8069,7 @@ SOV_united_aircraft_corporation_aircraft_manufacturer = {
 		limit_to_equipment_type = { large_plane_airframe }
 
 		equipment_bonus = {
-			strategic_attack = 0.06
+			air_bombing = 0.06
 			air_defence = 0.05
 		}
 

@@ -1109,7 +1109,7 @@ CHI_norinco_manufacturer = {
 
 		limit_to_equipment_type = { guided_missile_equipment }
 
-		equipment_bonus = { strategic_attack = 0.06 }
+		equipment_bonus = { air_bombing = 0.06 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -4843,7 +4843,7 @@ CHI_casic_manufacturer = {
 
 		equipment_bonus = {
 			naval_strike_attack = 0.10
-			strategic_attack = 0.08
+			air_bombing = 0.08
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -5167,7 +5167,7 @@ CHI_casic_manufacturer = {
 
 		limit_to_equipment_type = { ballistic_missile_equipment }
 
-		equipment_bonus = { strategic_attack = 0.02 }
+		equipment_bonus = { air_bombing = 0.02 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -5192,7 +5192,7 @@ CHI_casic_manufacturer = {
 
 		limit_to_equipment_type = { ballistic_missile_equipment }
 
-		equipment_bonus = { strategic_attack = 0.15 }
+		equipment_bonus = { air_bombing = 0.15 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -5371,7 +5371,7 @@ CHI_casc_manufacturer = {
 		relative_position_id = CHI_casc_guidance_focal_array
 		position = { x = -2 y = 1 }
 
-		equipment_bonus = { strategic_attack = 0.06 }
+		equipment_bonus = { air_bombing = 0.06 }
 
 		production_bonus = { production_capacity_factor = 0.12 }
 
