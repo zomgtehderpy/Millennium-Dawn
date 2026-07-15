@@ -17161,10 +17161,7 @@ GENERIC_krepost_state_defense_bureau = {
 		name = GENERIC_krepost_state_defense_bureau_parallel_tooling
 		icon = GFX_generic_mio_trait_icon_build_cost_ic
 
-		all_parents = {
-			GENERIC_krepost_state_defense_bureau_siberian_lines
-			GENERIC_krepost_state_defense_bureau_tandem_charge
-		}
+		all_parents = { GENERIC_krepost_state_defense_bureau_siberian_lines }
 
 		position = { x = -1 y = 4 }
 		relative_position_id = GENERIC_krepost_state_defense_bureau_anon_bureau
@@ -17194,10 +17191,7 @@ GENERIC_krepost_state_defense_bureau = {
 		name = GENERIC_krepost_state_defense_bureau_cryo_storage
 		icon = GFX_generic_mio_trait_icon_aa_resource
 
-		all_parents = {
-			GENERIC_krepost_state_defense_bureau_siberian_lines
-			GENERIC_krepost_state_defense_bureau_cold_launch
-		}
+		all_parents = { GENERIC_krepost_state_defense_bureau_siberian_lines }
 
 		position = { x = 1 y = 4 }
 		relative_position_id = GENERIC_krepost_state_defense_bureau_anon_bureau
