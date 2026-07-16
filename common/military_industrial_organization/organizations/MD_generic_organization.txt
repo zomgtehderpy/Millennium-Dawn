@@ -18637,7 +18637,7 @@ GENERIC_sevmorprom_submarine_yards = {
 
 		limit_to_equipment_type = { attack_submarine }
 
-		equipment_bonus = { armor_value = 0.05 }
+		equipment_bonus = { naval_range = 0.05 }
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
 
@@ -19151,10 +19151,7 @@ GENERIC_sevmorprom_submarine_yards = {
 		name = GENERIC_sevmorprom_trait_silent_torpedo
 		icon = GFX_generic_mio_trait_icon_torpedo_attack
 
-		all_parents = {
-			GENERIC_sevmorprom_trait_heavy_torpedoes
-			GENERIC_sevmorprom_trait_anechoic_tiles
-		}
+		all_parents = { GENERIC_sevmorprom_trait_heavy_torpedoes }
 
 		relative_position_id = GENERIC_sevmorprom_trait_arsenal_hall
 		position = { x = -1 y = 3 }
@@ -19379,8 +19376,8 @@ GENERIC_sevmorprom_submarine_yards = {
 		limit_to_equipment_type = { attack_submarine }
 
 		equipment_bonus = {
-			lg_attack = 0.08
-			naval_light_gun_hit_chance_factor = 0.05
+			torpedo_attack = 0.08
+			naval_torpedo_hit_chance_factor = 0.05
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -19465,8 +19462,6 @@ GENERIC_sevmorprom_submarine_yards = {
 
 		equipment_bonus = {
 			naval_torpedo_damage_reduction_factor = 0.05
-			lg_armor_piercing = 0.05
-			hg_armor_piercing = 0.04
 		}
 
 		on_complete = { expenditure_for_mio_upgrade = yes }
@@ -24247,7 +24242,7 @@ GENERIC_sentinel_grid_networks = {
 		name = GENERIC_sentinel_grid_networks_signal_discipline
 		icon = GFX_generic_mio_trait_icon_resources
 
-		any_parent = { GENERIC_sentinel_grid_networks_hardened_antennae }
+		all_parents = { GENERIC_sentinel_grid_networks_hardened_antennae }
 
 		position = { x = -1 y = 3 }
 		relative_position_id = GENERIC_sentinel_grid_networks_lattice_mesh
@@ -24303,7 +24298,6 @@ GENERIC_sentinel_grid_networks = {
 		any_parent = {
 			GENERIC_sentinel_grid_networks_signal_discipline
 			GENERIC_sentinel_grid_networks_dense_mesh
-			GENERIC_sentinel_grid_networks_crosshair_targeting
 		}
 
 		position = { x = 0 y = 4 }
@@ -24483,7 +24477,7 @@ GENERIC_sentinel_grid_networks = {
 		name = GENERIC_sentinel_grid_networks_pattern_of_life
 		icon = GFX_generic_mio_trait_icon_research
 
-		any_parent = { GENERIC_sentinel_grid_networks_multi_domain_feed }
+		all_parents = { GENERIC_sentinel_grid_networks_multi_domain_feed }
 
 		position = { x = 1 y = 3 }
 		relative_position_id = GENERIC_sentinel_grid_networks_oracle_kernel
@@ -24534,10 +24528,7 @@ GENERIC_sentinel_grid_networks = {
 		name = GENERIC_sentinel_grid_networks_compressor_keystone
 		icon = GFX_generic_mio_trait_icon_task
 
-		all_parents = {
-			GENERIC_sentinel_grid_networks_kinetic_minimalism
-			GENERIC_sentinel_grid_networks_dense_mesh
-		}
+		all_parents = { GENERIC_sentinel_grid_networks_kinetic_minimalism }
 
 		position = { x = 0 y = 5 }
 		relative_position_id = GENERIC_sentinel_grid_networks_oracle_kernel
@@ -24634,10 +24625,7 @@ GENERIC_sentinel_grid_networks = {
 		name = GENERIC_sentinel_grid_networks_forward_dock
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
-		all_parents = {
-			GENERIC_sentinel_grid_networks_rugged_revision
-			GENERIC_sentinel_grid_networks_packet_storm
-		}
+		all_parents = { GENERIC_sentinel_grid_networks_rugged_revision }
 
 		position = { x = -1 y = 2 }
 		relative_position_id = GENERIC_sentinel_grid_networks_fieldbook_tablet
