@@ -1,0 +1,75 @@
+
+ingame_init_internal_investment_system = {
+	resize_array = { array = internal_ value = 0 size = 6 } # Index starts at 0
+}
+
+start_internal_project = {
+	# Get available project
+	get_available_project = yes
+
+	if = { limit = { is_debug = yes }
+		log = "[GetDateText]: [THIS.GetName]: DEBUG: start_project_two - new_project = [?new_project], state = [?investments_state_target], building_type = [?project_building_type^-1], amount = [?project_build_amount^-1]"
+	}
+
+	# new_project sets the correct index for the new project
+	if = { limit = { has_variable = new_project }
+
+		# Initializes the Project
+		set_variable = { project = new_project }
+		set_variable = { project_type = project_building_type^-1 }
+
+		# Active Project Variables (must precede calculate_project_duration so it can read build_amount^project)
+		set_variable = { project_build_amount^project = project_build_amount^-1 }
+		set_variable = { project_building_type^project = project_building_type^-1 }
+		set_variable = { project_monetary_cost^project = project_monetary_cost^-1 }
+
+		random_state = {
+			limit = { state = PREV.investments_state_target }
+
+			add_to_array = { projects_in_state = PREV.id } # Should be FROM
+			# Create a new array for this
+			add_to_array = { project_type_in_state = PREV.project_building_type^-1 }
+			set_variable = { project_target_state_@PREV = PREV.project }
+			# Sets the starting nation
+			set_variable = { PREV.internal_project_array^PREV.project = THIS.id }
+			CONTROLLER = {
+				set_variable = { PREV.PREV.project_target_country^PREV.PREV.project = THIS.id }
+			}
+			precompute_state_construction_data = yes
+		}
+
+		calculate_project_duration = yes
+
+		# Activate Project
+		add_to_variable = { treasury = project_monetary_cost_effect } # Project Monetary Cost Effect is -1
+		subtract_from_variable = { int_investments = project_monetary_cost_effect }
+		add_to_variable = { active_projects = 1 }
+
+		# Initializes the target decisions for the investment project
+		initialize_start_internal_project_decisions = yes
+
+		clear_variable = project
+		clear_variable = project_type
+		clear_variable = new_project
+
+		if = { limit = { is_debug = yes }
+			log = "[GetDateText]: [THIS.GetName]: DEBUG: start_project_two - project started at slot [?new_project], cost = [?project_monetary_cost^-1], duration = [?project_construction_duration^new_project] days"
+		}
+	}
+	else = {
+		if = { limit = { is_debug = yes }
+			log = "[GetDateText]: [THIS.GetName]: DEBUG: start_project_two - FAILED: no available project slot (all 15 full)"
+		}
+	}
+
+	refresh_investment_gui = yes
+}
+
+initialize_start_internal_project_decisions = {
+	meta_effect = {
+		text = {
+			activate_decision = internal_investments_project_[INDEX]_decision
+		}
+		INDEX = "[?project]"
+	}
+}

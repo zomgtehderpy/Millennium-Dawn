@@ -1,0 +1,60 @@
+
+defined_text = {
+	name = internal_investments_get_project_type
+
+	text = {
+		trigger = { check_variable = { internal_project_type = 1 } }
+		localization_key = currently_encouraged_investments
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 2 } }
+		localization_key = encourage_productivity_in_state
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 3 } }
+		localization_key = expand_local_building_capacity
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 4 } }
+		localization_key = expand_local_renewable_capacity
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 5 } }
+		localization_key = expand_local_infrastructure
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 6 } }
+		localization_key = expand_local_military_infrastructure
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 7 } }
+		localization_key = expand_local_energy_infrastructure
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 8 } }
+		localization_key = build_forward_logistics_base
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 9 } }
+		localization_key = improve_rebuilding_efforts
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 10 } }
+		localization_key = hire_extra_primary_sector_workers
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 11 } }
+		localization_key = expand_local_coastal_infrastructure
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 12 } }
+		localization_key = expand_local_fortification_efforts
+	}
+	text = {
+		trigger = { check_variable = { internal_project_type = 13 } }
+		localization_key = improve_local_conservation_efforts
+	}
+	text = {
+		localization_key = "Invalid project type!!!"
+	}
+}
