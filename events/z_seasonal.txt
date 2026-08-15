@@ -1,0 +1,67 @@
+add_namespace = seasonal
+
+country_event = {
+	id = seasonal.1
+	hidden = yes
+    timeout_days = 1
+
+	trigger = {
+		has_global_flag = winter_season
+		NOT = {
+			has_idea = winter_power_fuel_use
+			#has_country_flag = recent_winter
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		#set_country_flag = { flag = recent_winter days = 180 value = 1 }
+		set_temp_variable = { winter_time = 90 }
+		randomize_temp_variable = {
+			var = winter_time
+			distribution = uniform
+			min = 85
+			max = 100
+		}
+		add_timed_idea = {
+			idea = winter_power_fuel_use
+			days = winter_time
+		}
+	}
+}
+
+country_event = {
+	id = seasonal.2
+	hidden = yes
+    timeout_days = 1
+
+	trigger = {
+		has_global_flag = summer_season
+		NOT = {
+			has_idea = summer_power_fuel_use
+			#has_country_flag = recent_summer
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		#set_country_flag = { flag = recent_summer days = 180 value = 1 }
+		set_temp_variable = { summer_time = 90 }
+		randomize_temp_variable = {
+			var = summer_time
+			distribution = uniform
+			min = 85
+			max = 100
+		}
+		add_timed_idea = {
+			idea = summer_power_fuel_use
+			days = summer_time
+		}
+	}
+}

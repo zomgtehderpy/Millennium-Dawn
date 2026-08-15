@@ -1841,6 +1841,11 @@ on_actions = {
 						add_ideas = GAME_RULE_reduce_internal_factions_cost
 					}
 				}
+
+				add_timed_idea = {
+					idea = winter_power_fuel_use
+					days = 60
+				}
 			}
 
 			ABK = {

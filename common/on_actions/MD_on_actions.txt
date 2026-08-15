@@ -1292,6 +1292,35 @@ on_actions = {
 
 				counter_terror_global = yes
 
+				if = {
+					limit = { #winter
+						OR = {
+							check_variable = { global.months < 3 }
+							check_variable = { global.months = 12 }
+						}
+					}
+					set_global_flag = winter_season
+					clr_global_flag = autumn_season
+				}
+				else_if = { #spring
+					limit = {
+						check_variable = { global.months < 6 }
+					}
+					clr_global_flag = winter_season
+					set_global_flag = spring_season
+				}
+				else_if = { #summer
+					limit = {
+						check_variable = { global.months < 9 }
+					}
+					set_global_flag = summer_season
+					clr_global_flag = spring_season
+				}
+				else = { #autumn
+					clr_global_flag = summer_season
+					set_global_flag = autumn_season
+				}
+
 				# On Monthly Flag:
 				# Set this to 27 days to time out so that way February isn't missed
 				set_global_flag = { flag = on_monthly_done value = 1 days = 27 }

@@ -1,0 +1,26 @@
+ideas = {
+	country = {
+		winter_power_fuel_use = {
+			name = winter_power_fuel_use
+			picture = winter
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				energy_use_multiplier = 0.25
+				civilian_fuel_use_factor = 0.15
+			}
+		}
+		summer_power_fuel_use = {
+			name = summer_power_fuel_use
+			picture = summer
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				energy_use_multiplier = 0.25
+				civilian_fuel_use_factor = -0.025
+			}
+		}
+	}
+}
